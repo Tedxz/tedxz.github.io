@@ -6,7 +6,7 @@ subtitle: 解铮, Ph.D. Candidate
 
 profile:
   align: right
-  image: photo.jpg
+  image: photo-main.jpg
   address: >
     <p>Photographed at XJTU in 2016</p>
 
