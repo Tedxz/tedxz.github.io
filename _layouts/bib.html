@@ -1,8 +1,10 @@
 ---
 ---
 <!-- _layouts/bib.html -->
+<!-- col-sm-x的定义参见 https://v3.bootcss.com/css/#grid-intro -->
+<!-- 一共有12个column -->
       <div class="row">
-        <div class="col-sm-2 abbr">
+        <div class="col-sm-3 abbr">
         {%- if entry.abbr -%}
           {%- if site.data.venues[entry.abbr] -%}
           <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
@@ -10,10 +12,18 @@
           <abbr class="badge">{{entry.abbr}}</abbr>
           {%- endif -%}
         {%- endif -%}
+
+        <!-- Following teaser function is copied from yang yang. -->
+        <div class="teaser">
+          {%- if entry.image -%}
+          {% include figure.html path=entry.image class="img-fluid rounded z-depth-1" zoomable=true %}
+          {%- endif -%}
+        </div>
+
         </div>
 
         <!-- Entry bib key -->
-        <div id="{{entry.key}}" class="col-sm-8">
+        <div id="{{entry.key}}" class="col-sm-9">
         {% if entry.type == "thesis" -%}
           {{reference}}
         {%- else %}
@@ -72,9 +82,9 @@
 
           <!-- Journal/Book title and date -->
           {% if entry.type == "article" -%}
-            {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
+            {%- capture entrytype -%}<em>{{entry.journal}}</em>,{%- endcapture -%}
           {%- elsif entry.type == "inproceedings" -%}
-            {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
+            {%- capture entrytype -%}In <em>{{entry.booktitle}}</em>, {%- endcapture -%}
           {%- else -%}
             {%- capture entrytype -%}{%- endcapture -%}
           {%- endif -%}
@@ -84,7 +94,7 @@
           {%- if entry.year -%}
             {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
           {%- endif -%}
-          {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
+          {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear }}.{%- endcapture -%}
           <div class="periodical">
             {{ periodical | strip }}
           </div>
@@ -92,6 +102,9 @@
         
           <!-- Links/Buttons -->
           <div class="links">
+          {%- if entry.tldr %}
+            <a class="tldr btn btn-sm z-depth-0" role="button">TLDR</a>
+          {%- endif %}
           {%- if entry.abstract %}
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           {%- endif %}
@@ -150,6 +163,13 @@
           </div>
           {%- endif -%}
 
+          {% if entry.tldr -%}
+          <!-- Hidden tldr block -->
+          <div class="tldr hidden">
+            <p>{{ entry.tldr }}</p>
+          </div>
+          {%- endif -%}
+          
           {% if entry.bibtex_show -%}
           <!-- Hidden bibtex block -->
           <div class="bibtex hidden">

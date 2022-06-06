@@ -30,17 +30,23 @@ layout: default
           {%- endif %}
 
           <div class="clearfix">
-            {{ content }}
+            {{ page.bio | markdownify }}
           </div>
 
           {% if page.news -%}
           <!-- News -->
+          <br>
           {%- include news.html %}
           {%- endif %}
           {% if page.selected_papers -%}
             <!-- Selected papers -->
             {%- include selected_papers.html %}
           {%- endif %}
+
+          <div class="clearfix">
+            {{ content }}
+          </div>
+
           {%- if page.social %}
           <!-- Social -->
           <div class="social">
