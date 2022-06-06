@@ -1,18 +1,18 @@
 ---
 layout: about
 title: about
-permalink: /
-subtitle: 解铮, Ph.D. Candidate
+permalink: /index/
+subtitle: 解铮, Ph.D. Candidate<br> LAMDA Group, Nanjing University.
 
 profile:
   align: right
   image: photo.jpg
   address: >
-    <p>Photographed at XJTU in 2016</p>
-
+  <p> something </p>
+  
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
 ---
 
 I am a Ph.D. candidate of [Department of Computer Science and Technology](http://cs.nju.edu.cn/) in [Nanjing University](http://www.nju.edu.cn/), and a member of [LAMDA Group](http://www.lamda.nju.edu.cn/), led by [Prof. Zhi-Hua Zhou](http://cs.nju.edu.cn/zhouzh/). Before that, I received my B.Eng. degree in Computer Science and Technology in June 2016 from [Xi'an Jiaotong University](http://www.xjtu.edu.cn/).
