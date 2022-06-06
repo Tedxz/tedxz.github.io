@@ -199,12 +199,13 @@ jekyll-archives:
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
+# https://github.com/inukshuk/jekyll-scholar
 # -----------------------------------------------------------------------------
 
 scholar:
 
-  last_name: Einstein
-  first_name: [Albert, A.]
+  last_name: Xie
+  first_name: [Zheng, Z.]
 
   style: apa
   locale: en

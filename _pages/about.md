@@ -17,6 +17,7 @@ social: true  # includes social icons at the bottom of the page
 
 I am a Ph.D. candidate of [Department of Computer Science and Technology](http://cs.nju.edu.cn/) in [Nanjing University](http://www.nju.edu.cn/), and a member of [LAMDA Group](http://www.lamda.nju.edu.cn/), led by [Prof. Zhi-Hua Zhou](http://cs.nju.edu.cn/zhouzh/). Before that, I received my B.Eng. degree in Computer Science and Technology in June 2016 from [Xi'an Jiaotong University](http://www.xjtu.edu.cn/).
 
+<!-- ## research interests -->
 I am interested in topics of machine learning, especially learning from imbalanced and incomplete supervision. Related topics include AUC optimization, learn to rank, positive-unlabeled learning, self-training, and semi-supervised learning on graphs.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder. -->
