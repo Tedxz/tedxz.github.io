@@ -23,7 +23,11 @@
         </div>
 
         <!-- Entry bib key -->
+        {% if page.narrow  -%}
+        <div id="{{entry.key}}" class="col-sm-7">
+        {%- else -%}
         <div id="{{entry.key}}" class="col-sm-9">
+        {%- endif -%}
         {% if entry.type == "thesis" -%}
           {{reference}}
         {%- else %}
