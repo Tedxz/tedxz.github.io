@@ -25,9 +25,9 @@ table {
 }
 
 a, table.table a {
-  color: var(--global-theme-color);
+  color: var(--global-link-color);
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-link-color);
     text-decoration: underline;
   }
   &:hover:after :not(.nav-item.dropdown) {
@@ -549,9 +549,23 @@ footer.sticky-bottom {
   .honor-title {
     font-weight: bolder;
   }
+  .honor-time-sm {
+    display: none;
+    @media screen and (max-width: 600px) {
+      display: block;
+      font-size: 0.8rem;
+      color: var(--global-theme-color);
+    }
+  }
   .honor-time {
+    float: right;
+    text-align: right;
+    display: block;
     font-size: 0.8rem;
     color: var(--global-theme-color);
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 }
 
@@ -572,9 +586,25 @@ footer.sticky-bottom {
   .ta-title {
     font-weight: bolder;
   }
+  .ta-time-sm {
+    display: none;
+    @media screen and (max-width: 600px) {
+      display: block;
+      margin-top: 0.5rem;
+      margin-bottom: 0rem;
+      font-size: 0.8rem;
+      color: var(--global-theme-color);
+    }
+  }
   .ta-time {
     font-size: 0.8rem;
     color: var(--global-theme-color);
+    margin-top: -1rem;
+    text-align: right;
+    float: right;
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
   }
 }
 

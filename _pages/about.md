@@ -17,7 +17,7 @@ social: false  # includes social icons at the bottom of the page
 bio: |
   解铮, Ph.D. Candidate  
   LAMDA Group, Nanjing University  
-  Advisor: Prof. Ming Li
+  Advisor: [Prof. Ming Li](https://www.lamda.nju.edu.cn/lim/)
 
   I am a Ph.D. candidate of [Department of Computer Science and Technology](http://cs.nju.edu.cn/) in [Nanjing University](http://www.nju.edu.cn/), and a member of [LAMDA Group](http://www.lamda.nju.edu.cn/), led by [Prof. Zhi-Hua Zhou](http://cs.nju.edu.cn/zhouzh/). Before that, I received my B.Eng. degree in Computer Science and Technology in June 2016 from [Xi'an Jiaotong University](http://www.xjtu.edu.cn/).
 
@@ -51,17 +51,18 @@ bio: |
       {% for ta in site.data.teaching-assistant %}
       <tr class="tight-tr">
         <td class="tight-td">
-          <span class="ta-title"> {{ ta.title }}  </span>
+          <div class="ta-time-sm"> For&nbsp;{{ ta.students | replace: " ", "&nbsp;" }}; {{ ta.semester | replace: " ", "&nbsp;" }}.  </div>
+          <div class="ta-title" style="line-height: 1rem;"> {{ ta.title }}  </div>
+          <div class="ta-time"> For&nbsp;{{ ta.students | replace: " ", "&nbsp;" }} <br> {{ ta.semester | replace: " ", "&nbsp;" }}  </div>
           {{ ta.notes | markdownify }}
-        </td>
-        <td align="right" class="tight-td">
-          <span class="ta-time"> For&nbsp;{{ ta.students | replace: " ", "&nbsp;" }} <br> {{ ta.semester | replace: " ", "&nbsp;" }}  </span>
         </td>
       </tr>
     {%- endfor %} 
     </table>
   </div>
 </div>
+
+
 
 <div class="honors">
   <h2>Awards & Honors</h2>
@@ -72,11 +73,8 @@ bio: |
       {% for honor in site.data.honors %}
       <tr class="tight-tr">
         <td class="tight-td">
-          <!-- {{ item.content | remove: '<p>' | remove: '</p>' | emojify }} -->
-          <!-- <th scope="row">{{ honor.title }}</th> -->
+          <span class="honor-time-sm"> {{ honor.location | replace: " ", "&nbsp;" }}; {{ honor.time | replace: " ", "&nbsp;" }}.  </span>
           <span class="honor-title"> {{ honor.title }}  </span>
-        </td>
-        <td align="right" class="tight-td">
           <span class="honor-time"> {{ honor.location | replace: " ", "&nbsp;" }} <br> {{ honor.time | replace: " ", "&nbsp;" }}  </span>
         </td>
       </tr>
