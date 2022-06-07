@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: 解铮, Ph.D. Candidate
+subtitle:
 
 profile:
   align: right
@@ -15,10 +15,13 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 
 bio: |
+  解铮, Ph.D. Candidate  
+  LAMDA Group, Nanjing University  
+  Advisor: Prof. Ming Li
+
   I am a Ph.D. candidate of [Department of Computer Science and Technology](http://cs.nju.edu.cn/) in [Nanjing University](http://www.nju.edu.cn/), and a member of [LAMDA Group](http://www.lamda.nju.edu.cn/), led by [Prof. Zhi-Hua Zhou](http://cs.nju.edu.cn/zhouzh/). Before that, I received my B.Eng. degree in Computer Science and Technology in June 2016 from [Xi'an Jiaotong University](http://www.xjtu.edu.cn/).
 
-  <!-- ## research interests -->
-  I am interested in topics of machine learning, especially learning from imbalanced and incomplete supervision. Related topics include AUC optimization, learn to rank, positive-unlabeled learning, self-training, and semi-supervised learning on graphs.
+  __Research Interests.__ I am interested in topics of machine learning, especially learning from imbalanced and incomplete supervision. Related topics include AUC optimization, learn to rank, positive-unlabeled learning, self-training, and semi-supervised learning on graphs.
 ---
 
 <!-- https://v3.bootcss.com/css/#grid-intro -->
@@ -39,20 +42,26 @@ bio: |
 - IJCAI 2022, ICML 2022, NeurIPS 2022
 
 
-## Teaching Assistant
-__Advances in Artificial Intelligence__. (For doctoral students, Fall, 2020)
+<div class="teaching-assistant">
+  <h2>Teaching Assistant</h2>
 
-__Programming Basics Experiments__. (For undergraduate students, Spring, 2019)
-- Tasks \[[Week 1](bop19/week_1)\]\[[Week 2](bop19/week_2)\]\[[Week 3](bop19/week_3)\]\[[Week 4](bop19/week_4 )\]
-
-__Introduction to Data Mining__. (For graduate and undergraduate students, Spring, 2017)
-- [Course Homepage](http://cs.nju.edu.cn/lim/courses/IntroDM/IntroDM.htm)
-- [Mining Challenge on Kaggle](https://inclass.kaggle.com/c/nju-introduction-to-data-mining-challenge) ([specifications](https://cs.nju.edu.cn/lim/courses/IntroDM/MiningPractice.htm)) (ends on 15 June, 2017)
-
-__Basics of Programming__. (For undergraduate students, Spring, 2017)
-- [Course Wiki](http://wiki.bop.zheng-xie.com/doku.php)
-- [Coding Style Guide for C\+\+ Beginners](bop17/style.html) (in Chinese)
-
+  <br>
+  <div class="table-responsive">
+    <table class="table table-sm table-borderless">
+      {% for ta in site.data.teaching-assistant %}
+      <tr>
+        <td>
+          <span class="ta-title"> {{ ta.title }}  </span>
+          {{ ta.notes | markdownify }}
+        </td>
+        <td align="right">
+          <span class="ta-time"> For&nbsp;{{ ta.students | replace: " ", "&nbsp;" }} <br> {{ ta.semester | replace: " ", "&nbsp;" }}  </span>
+        </td>
+      </tr>
+    {%- endfor %} 
+    </table>
+  </div>
+</div>
 
 <div class="honors">
   <h2>Awards & Honors</h2>
