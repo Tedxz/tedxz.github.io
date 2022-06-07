@@ -54,17 +54,28 @@ __Basics of Programming__. (For undergraduate students, Spring, 2017)
 - [Coding Style Guide for C\+\+ Beginners](bop17/style.html) (in Chinese)
 
 
-## Awards & Honors
+<div class="honors">
+  <h2>Awards & Honors</h2>
 
-OPPO 6G AI Competition, 5th place, 2022.  
-Selected in the Program B for Outstanding PhD Candidate of Nanjing University, 2021.  
-Artificial Intelligence Scholarship, Nanjing University, 2018.  
-AAAI Scholarship, New Orleans, 2018.  
-Outstanding Graduate of Xi'an Jiaotong University, 2016.  
-ACM-ICPC Asia Regional Contest, Silver Medal: Guangzhou Site 2014; Shanghai Site 2015.  
-ACM-ICPC China Provincial Programming Contest, Gold Medal: Shaanxi 2013; Chengdu 2013.  
-China Undergraduate Mathematical Contest in Modeling, First Prize at Provincial Level, 2014.  
-National Olympiad in Informatics, Bronze Medal, 2011.
+  <br>
+  <div class="table-responsive">
+    <table class="table table-sm table-borderless">
+      {% for honor in site.data.honors %}
+      <tr>
+        <td>
+          <!-- {{ item.content | remove: '<p>' | remove: '</p>' | emojify }} -->
+          <!-- <th scope="row">{{ honor.title }}</th> -->
+          <span class="honor-title"> {{ honor.title }}  </span>
+        </td>
+        <td align="right">
+          <span class="honor-time"> {{ honor.location | replace: " ", "&nbsp;" }} <br> {{ honor.time | replace: " ", "&nbsp;" }}  </span>
+        </td>
+      </tr>
+    {%- endfor %} 
+    </table>
+  </div>
+</div>
+
 
 ## Correspondence
 
