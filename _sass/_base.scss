@@ -19,6 +19,9 @@ table {
     td {
       font-size: 1rem;
     }
+    tr.tight-tr {
+      padding: 100rem;
+    }
 }
 
 a, table.table a {
@@ -102,6 +105,7 @@ blockquote {
     margin-top: 5px;
     font-family: monospace;
     p {
+      font-size: 0.8rem;
       display: inline-block;
       // margin: 0;
       margin-top: -10px;
@@ -532,6 +536,16 @@ footer.sticky-bottom {
 
 // Honors
 .honors {
+  .tight-tr {
+    // padding-top: 0rem;
+    // margin-top: 0rem;
+    // background-color: rgba(150, 212, 212, 0.4);
+  }
+  .tight-td {
+    padding-top: 0rem;
+    margin-top: 0rem;
+    // background-color: rgba(150, 212, 212, 0.4);
+  }
   .honor-title {
     font-weight: bolder;
   }
@@ -543,6 +557,18 @@ footer.sticky-bottom {
 
 // Teaching assistant
 .teaching-assistant {
+  .tight-tr {
+    // padding-top: 0rem;
+    // margin-top: 0rem;
+    // background-color: rgba(150, 212, 212, 0.4);
+  }
+  .tight-td {
+    padding-top: 0rem;
+    padding-bottom: 0.5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    // background-color: rgba(150, 212, 212, 0.4);
+  }
   .ta-title {
     font-weight: bolder;
   }

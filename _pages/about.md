@@ -49,12 +49,12 @@ bio: |
   <div class="table-responsive">
     <table class="table table-sm table-borderless">
       {% for ta in site.data.teaching-assistant %}
-      <tr>
-        <td>
+      <tr class="tight-tr">
+        <td class="tight-td">
           <span class="ta-title"> {{ ta.title }}  </span>
           {{ ta.notes | markdownify }}
         </td>
-        <td align="right">
+        <td align="right" class="tight-td">
           <span class="ta-time"> For&nbsp;{{ ta.students | replace: " ", "&nbsp;" }} <br> {{ ta.semester | replace: " ", "&nbsp;" }}  </span>
         </td>
       </tr>
@@ -70,13 +70,13 @@ bio: |
   <div class="table-responsive">
     <table class="table table-sm table-borderless">
       {% for honor in site.data.honors %}
-      <tr>
-        <td>
+      <tr class="tight-tr">
+        <td class="tight-td">
           <!-- {{ item.content | remove: '<p>' | remove: '</p>' | emojify }} -->
           <!-- <th scope="row">{{ honor.title }}</th> -->
           <span class="honor-title"> {{ honor.title }}  </span>
         </td>
-        <td align="right">
+        <td align="right" class="tight-td">
           <span class="honor-time"> {{ honor.location | replace: " ", "&nbsp;" }} <br> {{ honor.time | replace: " ", "&nbsp;" }}  </span>
         </td>
       </tr>
