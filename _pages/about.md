@@ -31,7 +31,7 @@ bio: |
 <!-- https://v3.bootcss.com/css/#grid-intro -->
 
 <div class="working-experiences">
-  <h2>Working Experiences</h2>
+  <h2>Working Experience</h2>
 
   <br>
   {% for item in site.data.working-experience %}
