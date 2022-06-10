@@ -30,6 +30,28 @@ bio: |
 
 <!-- https://v3.bootcss.com/css/#grid-intro -->
 
+<div class="working-experiences">
+  <h2>Working Experiences</h2>
+
+  <br>
+  {% for item in site.data.working-experience %}
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="teaser">
+        {%- if item.image -%}
+        {% include figure.html path=item.image class="img-fluid rounded" zoomable=false %}
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="col-sm-10">
+      <div class="we-title" style="line-height: 1rem;"> {{ item.title }}  </div>
+      <div class="we-time-sm"> {{ item.time | replace: " ", "&nbsp;" }}  </div>
+      <div class="we-time"> {{ item.time | replace: " ", "&nbsp;" }}  </div>
+      {{ item.notes | markdownify }}
+    </div>
+  </div>
+{%- endfor %} 
+</div>
 
 ## Academic Services
 
@@ -50,20 +72,16 @@ bio: |
   <h2>Teaching Assistant</h2>
 
   <br>
-  <div class="table-responsive">
-    <table class="table table-sm table-borderless">
-      {% for ta in site.data.teaching-assistant %}
-      <tr class="tight-tr">
-        <td class="tight-td">
-          <div class="ta-time-sm"> For&nbsp;{{ ta.students | replace: " ", "&nbsp;" }}; {{ ta.semester | replace: " ", "&nbsp;" }}.  </div>
-          <div class="ta-title" style="line-height: 1rem;"> {{ ta.title }}  </div>
-          <div class="ta-time"> For&nbsp;{{ ta.students | replace: " ", "&nbsp;" }} <br> {{ ta.semester | replace: " ", "&nbsp;" }}  </div>
-          {{ ta.notes | markdownify }}
-        </td>
-      </tr>
-    {%- endfor %} 
-    </table>
+  {% for ta in site.data.teaching-assistant %}
+  <div class="row mb-3">
+    <div class="col-sm-12">
+      <div class="ta-time-sm"> For&nbsp;{{ ta.students | replace: " ", "&nbsp;" }}; {{ ta.semester | replace: " ", "&nbsp;" }}.  </div>
+      <div class="ta-title" style="line-height: 1rem;"> {{ ta.title }}  </div>
+      <div class="ta-time"> For&nbsp;{{ ta.students | replace: " ", "&nbsp;" }} <br> {{ ta.semester | replace: " ", "&nbsp;" }}  </div>
+      {{ ta.notes | markdownify }}
+    </div>
   </div>
+  {%- endfor %} 
 </div>
 
 
@@ -72,19 +90,15 @@ bio: |
   <h2>Awards & Honors</h2>
 
   <br>
-  <div class="table-responsive">
-    <table class="table table-sm table-borderless">
-      {% for honor in site.data.honors %}
-      <tr class="tight-tr">
-        <td class="tight-td">
-          <span class="honor-time-sm"> {{ honor.location | replace: " ", "&nbsp;" }}; {{ honor.time | replace: " ", "&nbsp;" }}.  </span>
-          <span class="honor-title"> {{ honor.title }}  </span>
-          <span class="honor-time"> {{ honor.location | replace: " ", "&nbsp;" }} <br> {{ honor.time | replace: " ", "&nbsp;" }}  </span>
-        </td>
-      </tr>
-    {%- endfor %} 
-    </table>
+  {% for honor in site.data.honors %}
+  <div class="row">
+    <div class="col-sm-12 mb-2">
+      <span class="honor-title"> {{ honor.title }}  </span>
+      <span class="honor-time-sm"> {{ honor.location | replace: " ", "&nbsp;" }}; {{ honor.time | replace: " ", "&nbsp;" }}.  </span>
+      <span class="honor-time"> {{ honor.location | replace: " ", "&nbsp;" }} <br> {{ honor.time | replace: " ", "&nbsp;" }}  </span>
+    </div>
   </div>
+  {%- endfor %} 
 </div>
 
 
