@@ -66,6 +66,7 @@ bio: |
 - IJCAI 2020, ECAI 2020
 - IJCAI 2021
 - IJCAI 2022, ICML 2022, NeurIPS 2022
+- AAAI 2023, PAKDD 2023
 
 
 <div class="teaching-assistant">
