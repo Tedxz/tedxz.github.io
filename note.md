@@ -18,6 +18,8 @@ This command will generate site files from master branch to gh-pages branch and 
 
 Github action is not yet set.
 
+Homepage will be available at https://tedxz.github.io/personal-homepage/
+
 ## Deploy on LAMDA server
 Deploy on LAMDA server require domestic CDN and different url setting. Thus we use a `_config.lamda.yml`.
 
