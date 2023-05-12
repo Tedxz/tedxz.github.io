@@ -33,3 +33,5 @@ To push:
 ```
 scp -r _site/* xiez@www.lamda.nju.edu.cn:d:/personal_web/xiez
 ```
+
+Password: see keychain 210.28.132.69 (xiez)
