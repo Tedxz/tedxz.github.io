@@ -15,11 +15,11 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 
 bio: |
-  解铮, Ph.D. Candidate &nbsp; [✉️](mailto:xiez@lamda.nju.edu.cn)  
+  解铮, Ph.D. &nbsp; [✉️](mailto:xiez@lamda.nju.edu.cn)  
   LAMDA Group, Nanjing University  
   Advisor: [Prof. Ming Li](https://www.lamda.nju.edu.cn/lim/)
 
-  I am a Ph.D. candidate of [Department of Computer Science and Technology](http://cs.nju.edu.cn/) in [Nanjing University](http://www.nju.edu.cn/), and a member of [LAMDA Group](http://www.lamda.nju.edu.cn/), led by [Prof. Zhi-Hua Zhou](http://cs.nju.edu.cn/zhouzh/). Before that, I received my B.Eng. degree in Computer Science and Technology in June 2016 from [Xi'an Jiaotong University](http://www.xjtu.edu.cn/).
+  I am a Ph.D. of [Department of Computer Science and Technology](http://cs.nju.edu.cn/) in [Nanjing University](http://www.nju.edu.cn/), and a member of [LAMDA Group](http://www.lamda.nju.edu.cn/), led by [Prof. Zhi-Hua Zhou](http://cs.nju.edu.cn/zhouzh/). Before that, I received my B.Eng. degree in Computer Science and Technology in June 2016 from [Xi'an Jiaotong University](http://www.xjtu.edu.cn/).
 
   __Research Interests.__ I am interested in topics of machine learning, especially the following aspects: 
   - __AUC Optimization__: building models for maximizing AUC from clean or potentially noisy, imbalanced, not fully supervised data. 
