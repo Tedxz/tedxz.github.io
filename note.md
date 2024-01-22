@@ -33,5 +33,10 @@ To push:
 ```
 scp -r _site/* xiez@www.lamda.nju.edu.cn:d:/personal_web/xiez
 ```
+or
+```
+scp -r _site/* lamda_server:d:/personal_web/xiez
+```
+(See ssh config)
 
 Password: see keychain 210.28.132.69 (xiez)
