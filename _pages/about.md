@@ -16,10 +16,9 @@ social: false  # includes social icons at the bottom of the page
 
 bio: |
   解铮, Ph.D. &nbsp; [✉️](mailto:xiez@lamda.nju.edu.cn)  
-  LAMDA Group, Nanjing University  
-  Advisor: [Prof. Ming Li](https://www.lamda.nju.edu.cn/lim/)
 
-  I am a Ph.D. of [Department of Computer Science and Technology](http://cs.nju.edu.cn/) in [Nanjing University](http://www.nju.edu.cn/), and a member of [LAMDA Group](http://www.lamda.nju.edu.cn/), led by [Prof. Zhi-Hua Zhou](http://cs.nju.edu.cn/zhouzh/). Before that, I received my B.Eng. degree in Computer Science and Technology in June 2016 from [Xi'an Jiaotong University](http://www.xjtu.edu.cn/).
+  I obtained my Ph.D. degree from [LAMDA Group](http://www.lamda.nju.edu.cn/) at [Nanjing University](http://www.nju.edu.cn/) in September 2023, supervised by [Prof. Ming Li](https://www.lamda.nju.edu.cn/lim/). 
+  Before that, I received my B.Eng. degree in Computer Science and Technology in June 2016 from [Xi'an Jiaotong University](http://www.xjtu.edu.cn/). 
 
   __Research Interests.__ I am interested in topics of machine learning, especially the following aspects: 
   - __AUC Optimization__: building models for maximizing AUC from clean or potentially noisy, imbalanced, not fully supervised data. 
@@ -59,14 +58,15 @@ bio: |
 
 - Pattern Recognition Letter  
 - ACTA AUTOMATICA SINICA
-
+- Knowledge-Based Systems
 
 ### Conference PC Member
 - CCML 2019, AAAI 2019  
 - IJCAI 2020, ECAI 2020
 - IJCAI 2021
 - IJCAI 2022, ICML 2022, NeurIPS 2022
-- AAAI 2023, PAKDD 2023
+- AAAI 2023, IJCAI 2023, ICML2023, NeurIPS 2023, ICLR 2023, PAKDD 2023, ECAI 2023
+- AAAI 2024, IJCAI 2024, ICML 2024, NeurIPS 2024, ICLR 2024, PAKDD 2024, ECMLPKDD 2024
 
 
 <div class="teaching-assistant">
@@ -102,7 +102,9 @@ bio: |
   {%- endfor %} 
 </div>
 
+<br><br><br>
 
+<!--
 ## Correspondence
 
 ### Laboratory
@@ -114,6 +116,7 @@ National Key Laboratory for Novel Software Technology,
 Nanjing University, Xianlin Campus Mailbox 603,  
 163 Xianlin Avenue, Qixia District,  
 Nanjing 210023, China
+-->
 
 {%- include statistics.html %}
 

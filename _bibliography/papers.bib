@@ -1,5 +1,19 @@
 ---
 ---
+
+@inproceedings{he2024wsabl,
+  abbr        = {ICML},
+  bibtex_show = {true},
+  selected    = {true},
+  author      = {Hao-Yuan He and Hui Sun and Zheng Xie and Ming Li},
+  booktitle   = {The 41st International Conference on Machine Learning},
+  title       = {Ambiguity-Aware Abductive Learning},
+  year        = {2024},
+  pdf         = {icml24-hehy.pdf},
+  abstract    = {Abductive Learning (ABL) is a promising framework for integrating sub-symbolic perception and logical reasoning through abduction. In this case, the abduction process provides supervision for the perception model from the background knowledge. Nevertheless, this process naturally contains uncertainty, since the knowledge base may be satisfied by numerous potential candidates. This implies that the result of the abduction process, i.e., a set of candidates, is ambiguous; both correct and incorrect candidates are mixed in this set. The prior art of abductive learning selects the candidate that has the minimal inconsistency of the knowledge base. However, this method overlooks the ambiguity in the abduction process and is prone to error when it fails to identify the correct candidates. To address this, we propose Ambiguity-Aware Abductive Learning (A3BL), which evaluates all potential candidates and their probabilities, thus preventing the model from falling into sub-optimal solutions. Both experimental results and theoretical analyses prove that A3BL markedly enhances ABL by efficiently exploiting the ambiguous abduced supervision.},
+  image       = {assets/img/pub_img/wsabl.png},
+}
+
 @article{xie2023wsauc,
   abbr          = {TPAMI},
   bibtex_show   = {true},
@@ -26,6 +40,31 @@
   pdf         = {aaai24-xiez.pdf},
   abstract    = {Weakly supervised learning aims to empower machine learning when the perfect supervision is unavailable, which has drawn great attention from researchers. Among various types of weak supervision, one of the most challenging cases is to learn from multiple unlabeled (U) datasets with only a little knowledge of the class priors, or U^m learning for short. In this paper, we study the problem of building an AUC (area under ROC curve) optimization model from multiple unlabeled datasets, which maximizes the pairwise ranking ability of the classifier. We propose U^m-AUC, an AUC optimization approach that converts the U^m data into a multi-label AUC optimization problem, and can be trained efficiently. We show that the proposed U^m-AUC is effective theoretically and empirically.},
   image       = {assets/img/pub_img/umauc.png},
+}
+@inproceedings{topaz,
+  abbr        = {ARXIV},
+  bibtex_show = {true},
+  selected    = {true},
+  author      = {Zhi-Cun Lyu and Xin-Ye Li and Zheng Xie and Ming Li},
+  booktitle   = {preprint},
+  title       = {Top Pass: Improve Code Generation by Pass@k-Maximized Code Ranking},
+  year        = {2024},
+  _pdf         = {},
+  _abstract    = {},
+  image       = {assets/img/pub_img/topaz.png},
+}
+
+@inproceedings{brainstorm,
+  abbr        = {ARXIV},
+  bibtex_show = {true},
+  selected    = {true},
+  author      = {Xin-Ye Li and Jiang-Tian Xue and Zheng Xie and Ming Li},
+  booktitle   = {preprint},
+  title       = {Think Outside the Code: Brainstorming Boosts Large Language Models in Code Generation},
+  year        = {2024},
+  pdf         = {https://arxiv.org/abs/2305.10679},
+  abstract    = {Code generation aims to automatically generate source code from high-level task specifications, which can significantly increase productivity of software engineering. Recently, approaches based on large language models (LLMs) have shown remarkable code generation abilities on simple tasks. However, generate code for more complex tasks, such as competition-level problems, remains challenging. In this paper, we introduce Brainstorm framework for code generation. It leverages a brainstorming step that generates and selects diverse thoughts on the problem to facilitate algorithmic reasoning, where the thoughts are possible blueprint of solving the problem. We demonstrate that Brainstorm significantly enhances the ability of LLMs to solve competition-level programming problems, resulting in a more than 50% increase in the pass@k metrics for ChatGPT on the CodeContests benchmark, achieving state-of-the-art performance. Furthermore, our experiments conducted on LeetCode contests show that our framework boosts the ability of ChatGPT to a level comparable to that of human programmers.},
+  image       = {assets/img/pub_img/brainstorm.png},
 }
 
 @inproceedings{du2023beyond,
