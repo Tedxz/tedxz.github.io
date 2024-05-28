@@ -18,7 +18,7 @@ This command will generate site files from master branch to gh-pages branch and 
 
 Github action is not yet set.
 
-Homepage will be available at https://tedxz.github.io/personal-homepage/
+Homepage will be available at https://tedxz.github.io/
 
 ## Deploy on LAMDA server
 Deploy on LAMDA server require domestic CDN and different url setting. Thus we use a `_config.lamda.yml`.
@@ -38,5 +38,9 @@ or
 scp -r _site/* lamda_server:d:/personal_web/xiez
 ```
 (See ssh config)
+
+
+Auto redirect to github page:
+scp ../index.html lamda_server:d:/personal_web/xiez
 
 Password: see keychain 210.28.132.69 (xiez)
