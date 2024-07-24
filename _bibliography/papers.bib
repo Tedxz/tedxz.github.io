@@ -1,6 +1,19 @@
 ---
 ---
 
+@inproceedings{liu2024recsys,
+  abbr        = {RecSys},
+  bibtex_show = {true},
+  selected    = {true},
+  author      = {Yu Liu and Qinglin Jia and Shuting Shi and Chuhan Wu and Zhaocheng Du and Zheng Xie and Ruiming Tang and Muyu Zhang and Ming Li}, 
+  booktitle   = {The 18th ACM Conference on Recommender Systems},
+  title       = {Ranking-Aware Unbiased Post-Click Conversion Rate Estimation via AUC Optimization on Entire Exposure Space},
+  year        = {2024},
+  pdf         = {},
+  abstract    = {Estimating the post-click conversion rate (CVR) accurately in ranking systems is crucial for industrial applications. However, this task faces challenges of data sparsity and selection bias, which hinder accurate ranking. Previous approaches attempting to address these challenges often involve a trade-off: either training models on the entire exposure space without unbiased CVR estimation, or providing unbiased CVR estimation without modeling CVR across the entire exposure space. To overcome this trade-off, we propose the Entire-space Weighted Area Under the Curve (EWAUC) framework, which formulates the CVR estimation task as an AUC optimization problem. EWAUC leverages sample reweighting techniques to handle selection bias, and employs pairwise AUC risk to incorporate more information from limited clicked data than cross-entropy and handle data sparsity. In order to model CVR across the entire exposure space in an unbiased manner, EWAUC treats the exposure data as both conversion data and non-conversion data. The properties of AUC risk guarantee the unbiased nature of the entire-space modeling. We provide comprehensive theoretical analysis to validate the unbiased nature of our approach. Additionally, extensive experiments conducted on real-world datasets demonstrate that our approach outperforms state-of-the-art methods in terms of ranking performance for the CVR estimation task.},
+  image       = {assets/img/pub_img/recsys24.png},
+}
+
 @inproceedings{he2024wsabl,
   abbr        = {ICML},
   bibtex_show = {true},
@@ -26,7 +39,9 @@
   journal       = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
   author        = {Zheng Xie and Yu Liu and Hao-Yuan He and Ming Li and Zhi-Hua Zhou},
   year          = {2024},
-  volume        = {in press},
+  volume        = {46},
+  issue         = {7},
+  pages         = {4780--4795},
 }
 
 @inproceedings{xie2024umauc,
@@ -41,14 +56,15 @@
   abstract    = {Weakly supervised learning aims to empower machine learning when the perfect supervision is unavailable, which has drawn great attention from researchers. Among various types of weak supervision, one of the most challenging cases is to learn from multiple unlabeled (U) datasets with only a little knowledge of the class priors, or U^m learning for short. In this paper, we study the problem of building an AUC (area under ROC curve) optimization model from multiple unlabeled datasets, which maximizes the pairwise ranking ability of the classifier. We propose U^m-AUC, an AUC optimization approach that converts the U^m data into a multi-label AUC optimization problem, and can be trained efficiently. We show that the proposed U^m-AUC is effective theoretically and empirically.},
   image       = {assets/img/pub_img/umauc.png},
 }
-@inproceedings{topaz,
-  abbr        = {ARXIV},
+@article{topaz,
+  abbr        = {FCS},
   bibtex_show = {true},
   selected    = {true},
   author      = {Zhi-Cun Lyu and Xin-Ye Li and Zheng Xie and Ming Li},
-  booktitle   = {preprint},
-  title       = {Top Pass: Improve Code Generation by Pass@k-Maximized Code Ranking},
+  journal     = {Frontiers of Computer Science},
+  title       = {{Top Pass}: Improve Code Generation by Pass@k-Maximized Code Ranking},
   year        = {2024},
+  volume      = {in press},
   _pdf         = {},
   _abstract    = {},
   image       = {assets/img/pub_img/topaz.png},

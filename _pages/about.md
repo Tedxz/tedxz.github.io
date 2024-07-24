@@ -17,6 +17,8 @@ social: false  # includes social icons at the bottom of the page
 bio: |
   解铮, Ph.D. &nbsp; [✉️](mailto:xiez@lamda.nju.edu.cn)  
 
+  Currently, I am with Huawei Technologies Co., Ltd.
+
   I obtained my Ph.D. degree from [LAMDA Group](http://www.lamda.nju.edu.cn/) at [Nanjing University](http://www.nju.edu.cn/) in September 2023, supervised by [Prof. Ming Li](https://www.lamda.nju.edu.cn/lim/). 
   Before that, I received my B.Eng. degree in Computer Science and Technology in June 2016 from [Xi'an Jiaotong University](http://www.xjtu.edu.cn/). 
 
@@ -56,6 +58,7 @@ bio: |
 
 ### Journal Reviewer
 
+- ACM Transactions on Intelligent Systems and Technology
 - Pattern Recognition Letter  
 - ACTA AUTOMATICA SINICA
 - Knowledge-Based Systems
