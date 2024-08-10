@@ -20,6 +20,8 @@ Github action is not yet set.
 
 Homepage will be available at https://tedxz.github.io/
 
+If xie-zheng.cn 404 check github pages setting.
+
 ## Deploy on LAMDA server
 Deploy on LAMDA server require domestic CDN and different url setting. Thus we use a `_config.lamda.yml`.
 
