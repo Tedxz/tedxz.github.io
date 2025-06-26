@@ -1,6 +1,7 @@
-# - title: Huawei
-#   time:  Since 2024
-#   image: assets/img/huawei.png
+- title: Huawei Technologies
+  time:  Since 2024
+  notes: I am working on building large language models for autonomous networks. Specifically, I lead the reinforcement learning project and some other algorithm projects for large model training.
+  image: assets/img/huawei.png
 
 - title: Research Intern at Baidu Research
   time:  July - Oct., 2015.

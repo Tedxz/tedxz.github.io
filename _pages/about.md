@@ -17,7 +17,7 @@ social: false  # includes social icons at the bottom of the page
 bio: |
   解铮, Ph.D. &nbsp; [✉️](mailto:xiez@lamda.nju.edu.cn)  
 
-  Currently, I am with Huawei Technologies Co., Ltd.
+  I joined Huawei Technologies in 2024, through TopMinds program. Currently, I am working on building large language models for autonomous networks. Specifically, I lead the reinforcement learning project and some other algorithm projects for large model training.
 
   I obtained my Ph.D. degree from [LAMDA Group](http://www.lamda.nju.edu.cn/) at [Nanjing University](http://www.nju.edu.cn/) in September 2023, supervised by [Prof. Ming Li](https://www.lamda.nju.edu.cn/lim/). 
   Before that, I received my B.Eng. degree in Computer Science and Technology in June 2016 from [Xi'an Jiaotong University](http://www.xjtu.edu.cn/). 
@@ -51,6 +51,7 @@ bio: |
       {{ item.notes | markdownify }}
     </div>
   </div>
+  <br>
 {%- endfor %} 
 </div>
 
