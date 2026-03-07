@@ -25,7 +25,7 @@ bio: |
   __Research Interests.__ I am interested in topics of machine learning, especially the following aspects: 
   - __RL for LLMs__: build algorithms to improving LLMs' ability via reinforcement learning, especially for coding abilities.
   - __AUC Optimization__: building models for maximizing AUC from clean or potentially noisy, imbalanced, not fully supervised data. 
-  - __Weakly Supervised Learning and Transfer Learning__: build machine learning models with inaccurate, incomplete, inexact supervisions, including positive-unlabeled learning, semi-supervised learning, noisy label learning, etc. 
+  - __Weakly Supervised Learning__: build machine learning models with inaccurate, incomplete, inexact supervisions, including positive-unlabeled learning, semi-supervised learning, noisy label learning, etc. 
   - __Learning under Distribution Change__: building models for tasks whose test data distribution is different from the training data distribution, including data selection bias, covariate shift, domain adaptation, etc.
 ---
 ---
